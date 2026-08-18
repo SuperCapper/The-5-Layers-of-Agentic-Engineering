@@ -4,6 +4,8 @@
 
 ## 1. Prompt Engineering: Get One Call Right
 
+![Prompt engineering diagram](images/01-prompt-engineering.webp)
+
 The prompt is everything the model sees in a single call. A role, instructions, a few examples, an output format.
 
 Three rules cover most of the craft:
@@ -17,6 +19,8 @@ Prompt engineering is real work, and it has a ceiling. Most people hit that ceil
 👉 If your agent fails the same way no matter how you reword the prompt, you have outgrown this layer. Zoom out.
 
 ## 2. Context Engineering: Get One Window Right
+
+![Context engineering diagram](images/02-context-engineering.webp)
 
 Context is everything inside the model window it sees on a call: Prompt, queries, retrieved docs, memory, prior turns, and earlier tool outputs all compete for the same window.
 
@@ -40,6 +44,8 @@ Memory and context are different jobs. Memory decides what your agent can know. 
 
 ## 3. Harness Engineering: Get One Run Right
 
+![Harness engineering diagram](images/03-harness-engineering.webp)
+
 Agent = model + harness.
 
 The model supplies the intelligence. The harness is the system around the model that turns intelligence into reliable action.
@@ -59,6 +65,8 @@ Whether that result actually meets the goal belongs to the next layer.
 
 ## 4. Loop Engineering: Get One Goal Right
 
+![Loop engineering diagram](images/04-loop-engineering.webp)
+
 In the default setup, you are the loop. You write a prompt, read the result, write the next prompt, and catch the failures by hand.
 
 Loop engineering hands that job to the agent. It kicks off on a schedule or an event, runs many turns without you, and stops when the goal is met.
@@ -76,6 +84,8 @@ The main concern with loops is that the model has to find its own path to the go
 A more deterministic approach is to define the allowed paths yourself. That is the fifth layer:
 
 ## 5. Graph Engineering: Get the Whole Workflow Right
+
+![Graph engineering diagram](images/05-graph-engineering.webp)
 
 Graph engineering is about defining the workflow around the agent.
 
@@ -106,6 +116,8 @@ When your agent misbehaves, find the layer before you touch anything:
 The fix compounds as you move out: a better prompt improves one call, a better harness improves every run, a better loop ships work while you sleep, and a better graph does that with ten agents at once.
 
 ## The Cheat Sheet
+
+![The 5 Layers of AI Engineering cheat sheet](images/06-cheat-sheet.webp)
 
 Think of your agent as a junior engineer:
 
