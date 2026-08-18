@@ -18,6 +18,8 @@ Prompt engineering is real work, and it has a ceiling. Most people hit that ceil
 
 👉 If your agent fails the same way no matter how you reword the prompt, you have outgrown this layer. Zoom out.
 
+[How to Implement Structured Output with Local LLMs](Implementing%20Structured%20Output%20with%20Local%20LLMs.md)
+
 ## 2. Context Engineering: Get One Window Right
 
 ![Context engineering diagram](images/02-context-engineering.webp)
